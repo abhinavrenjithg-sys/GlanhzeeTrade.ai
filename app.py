@@ -11,7 +11,7 @@ import streamlit as st
 import plotly.graph_objects as go
 import google.generativeai as genai
 
-genai.configure(api_key="AIzaSyBFtViSMlkDRPUQ8tcoMPTcCBVLE3yKbX8")
+genai.configure(api_key=os.environ.get("GEMINI_API_KEY"))
 
 from utils import get_logger, MODEL_DIR, DATA_DIR, ensure_nltk_resources
 from data import collect_news, fetch_stock_data, merge_datasets, fetch_screener_data, TICKER_GROUPS

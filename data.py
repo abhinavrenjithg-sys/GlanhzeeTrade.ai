@@ -54,7 +54,7 @@ def scrape_yahoo_rss(ticker, max_articles=50):
         return pd.DataFrame()
 
     soup = BeautifulSoup(resp.content, "xml")
-    items = soup.find_all("item")[:max_articles]
+    items = soup.find_all("item")
     records = []
 
     for item in items:
@@ -92,7 +92,7 @@ def scrape_economic_times(query, max_pages=3):
         return pd.DataFrame()
 
     soup = BeautifulSoup(resp.text, "lxml")
-    articles = soup.find_all("div", class_="eachStory")[:40]
+    articles = soup.find_all("div", class_="eachStory")
     records = []
 
     for art in articles:
@@ -134,7 +134,7 @@ def scrape_moneycontrol(ticker):
         return pd.DataFrame()
 
     soup = BeautifulSoup(resp.text, "lxml")
-    articles = soup.find_all("li", class_="clearfix")[:30]
+    articles = soup.find_all("li", class_="clearfix")
     records = []
 
     for art in articles:
@@ -186,7 +186,7 @@ def scrape_newsapi(ticker):
         log.warning("NewsAPI error: %s", data.get("message"))
         return pd.DataFrame()
 
-    articles = data.get("articles", [])[:30]
+    articles = data.get("articles", [])
     records = []
 
     for art in articles:

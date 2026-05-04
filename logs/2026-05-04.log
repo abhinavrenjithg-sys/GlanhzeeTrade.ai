@@ -1,0 +1,735 @@
+2026-05-04 10:50:46 [INFO] data — Starting news collection for AAPL …
+2026-05-04 10:50:49 [INFO] data — Yahoo RSS — fetched 20 articles for AAPL
+2026-05-04 10:50:53 [INFO] data — Economic Times — fetched 16 articles
+2026-05-04 10:50:58 [INFO] data — Moneycontrol — fetched 25 articles
+2026-05-04 10:50:58 [INFO] data — NewsAPI key found — fetching advanced real-time news for AAPL...
+2026-05-04 10:51:00 [INFO] data — NewsAPI — fetched 30 articles
+2026-05-04 10:51:00 [INFO] data — News saved → C:\Users\ABHI\python project ca\data\news_data.csv (90 rows)
+2026-05-04 10:51:00 [INFO] sentiment — Computing sentiment for 90 rows …
+2026-05-04 10:51:00 [INFO] sentiment — Sentiment distribution — Positive: 51 | Neutral: 26 | Negative: 13
+2026-05-04 10:51:00 [INFO] data — Fetching stock data for AAPL …
+2026-05-04 10:51:08 [INFO] data — Stock data saved → C:\Users\ABHI\python project ca\data\stock_data.csv (251 rows)
+2026-05-04 10:51:08 [INFO] data — Merged dataset saved → C:\Users\ABHI\python project ca\data\merged_dataset.csv (251 rows)
+2026-05-04 10:51:08 [INFO] features — Engineering features on 251 rows …
+2026-05-04 10:51:08 [INFO] features — Feature matrix: 231 rows × 31 features
+2026-05-04 10:51:08 [INFO] features — Features saved → C:\Users\ABHI\python project ca\data\features.csv
+2026-05-04 10:51:09 [INFO] data — Fetching screener data for 21 tickers...
+2026-05-04 10:51:34 [INFO] model — Train size: 184 | Test size: 47
+2026-05-04 10:51:34 [INFO] model — Scaler saved → C:\Users\ABHI\python project ca\models\scaler.pkl
+2026-05-04 10:51:34 [INFO] model — Training Logistic Regression …
+2026-05-04 10:51:34 [INFO] model — Logistic Regression saved → C:\Users\ABHI\python project ca\models\logistic_regression.pkl
+2026-05-04 10:51:34 [INFO] model — Logistic Regression → Acc: 0.4681 | Prec: 0.4828 | Rec: 0.5833 | F1: 0.5283
+2026-05-04 10:51:34 [INFO] model — Training Random Forest …
+2026-05-04 10:51:35 [INFO] model — Top-5 features:
+macd_hist        0.076482
+volatility       0.073509
+macd             0.064805
+volume_change    0.060302
+volume_ratio     0.056062
+2026-05-04 10:51:35 [INFO] model — Random Forest saved → C:\Users\ABHI\python project ca\models\random_forest.pkl
+2026-05-04 10:51:35 [INFO] model — Random Forest → Acc: 0.5319 | Prec: 0.5217 | Rec: 1.0000 | F1: 0.6857
+2026-05-04 10:51:48 [INFO] model — Training LSTM (seq_len=10) …
+2026-05-04 10:51:59 [INFO] model — LSTM saved → C:\Users\ABHI\python project ca\models\lstm_model.keras
+2026-05-04 10:51:59 [INFO] model — LSTM → Acc: 0.4595 | Prec: 0.0000 | Rec: 0.0000 | F1: 0.0000
+2026-05-04 10:51:59 [INFO] model — Best model: Random Forest (F1=0.6857)
+2026-05-04 10:52:00 [INFO] model — Loading best model: Random Forest
+2026-05-04 10:53:25 [INFO] model — Loading best model: Random Forest
+2026-05-04 10:53:45 [INFO] data — Starting news collection for GOOGL …
+2026-05-04 10:53:47 [INFO] data — Yahoo RSS — fetched 20 articles for GOOGL
+2026-05-04 10:53:50 [INFO] data — Economic Times — fetched 16 articles
+2026-05-04 10:53:53 [INFO] data — Moneycontrol — fetched 25 articles
+2026-05-04 10:53:53 [INFO] data — NewsAPI key found — fetching advanced real-time news for GOOGL...
+2026-05-04 10:53:54 [INFO] data — NewsAPI — fetched 30 articles
+2026-05-04 10:53:55 [INFO] data — News saved → C:\Users\ABHI\python project ca\data\news_data.csv (91 rows)
+2026-05-04 10:53:55 [INFO] sentiment — Computing sentiment for 91 rows …
+2026-05-04 10:53:55 [INFO] sentiment — Sentiment distribution — Positive: 52 | Neutral: 24 | Negative: 15
+2026-05-04 10:53:55 [INFO] data — Fetching stock data for GOOGL …
+2026-05-04 10:53:56 [INFO] data — Stock data saved → C:\Users\ABHI\python project ca\data\stock_data.csv (251 rows)
+2026-05-04 10:53:56 [INFO] data — Merged dataset saved → C:\Users\ABHI\python project ca\data\merged_dataset.csv (251 rows)
+2026-05-04 10:53:56 [INFO] features — Engineering features on 251 rows …
+2026-05-04 10:53:56 [INFO] features — Feature matrix: 231 rows × 31 features
+2026-05-04 10:53:56 [INFO] features — Features saved → C:\Users\ABHI\python project ca\data\features.csv
+2026-05-04 10:53:56 [INFO] model — Loading best model: Random Forest
+2026-05-04 11:04:52 [INFO] data — Starting news collection for AAPL …
+2026-05-04 11:04:52 [WARNING] data — Attempt 1 failed for https://feeds.finance.yahoo.com/rss/2.0/headline?s=AAPL&region=US&lang=en-US — HTTPSConnectionPool(host='feeds.finance.yahoo.com', port=443): Max retries exceeded with url: /rss/2.0/headline?s=AAPL&region=US&lang=en-US (Caused by NameResolutionError("HTTPSConnection(host='feeds.finance.yahoo.com', port=443): Failed to resolve 'feeds.finance.yahoo.com' ([Errno 11001] getaddrinfo failed)"))
+2026-05-04 11:04:53 [WARNING] data — Attempt 2 failed for https://feeds.finance.yahoo.com/rss/2.0/headline?s=AAPL&region=US&lang=en-US — HTTPSConnectionPool(host='feeds.finance.yahoo.com', port=443): Max retries exceeded with url: /rss/2.0/headline?s=AAPL&region=US&lang=en-US (Caused by NameResolutionError("HTTPSConnection(host='feeds.finance.yahoo.com', port=443): Failed to resolve 'feeds.finance.yahoo.com' ([Errno 11001] getaddrinfo failed)"))
+2026-05-04 11:04:55 [WARNING] data — Attempt 3 failed for https://feeds.finance.yahoo.com/rss/2.0/headline?s=AAPL&region=US&lang=en-US — HTTPSConnectionPool(host='feeds.finance.yahoo.com', port=443): Max retries exceeded with url: /rss/2.0/headline?s=AAPL&region=US&lang=en-US (Caused by NameResolutionError("HTTPSConnection(host='feeds.finance.yahoo.com', port=443): Failed to resolve 'feeds.finance.yahoo.com' ([Errno 11001] getaddrinfo failed)"))
+2026-05-04 11:04:59 [ERROR] data — Could not reach Yahoo RSS for AAPL
+2026-05-04 11:04:59 [WARNING] data — Attempt 1 failed for https://economictimes.indiatimes.com/markets/stocks/news — HTTPSConnectionPool(host='economictimes.indiatimes.com', port=443): Max retries exceeded with url: /markets/stocks/news (Caused by NameResolutionError("HTTPSConnection(host='economictimes.indiatimes.com', port=443): Failed to resolve 'economictimes.indiatimes.com' ([Errno 11001] getaddrinfo failed)"))
+2026-05-04 11:05:12 [WARNING] data — Attempt 2 failed for https://economictimes.indiatimes.com/markets/stocks/news — HTTPSConnectionPool(host='economictimes.indiatimes.com', port=443): Max retries exceeded with url: /markets/stocks/news (Caused by NameResolutionError("HTTPSConnection(host='economictimes.indiatimes.com', port=443): Failed to resolve 'economictimes.indiatimes.com' ([Errno 11001] getaddrinfo failed)"))
+2026-05-04 11:05:25 [WARNING] data — Attempt 3 failed for https://economictimes.indiatimes.com/markets/stocks/news — HTTPSConnectionPool(host='economictimes.indiatimes.com', port=443): Max retries exceeded with url: /markets/stocks/news (Caused by NameResolutionError("HTTPSConnection(host='economictimes.indiatimes.com', port=443): Failed to resolve 'economictimes.indiatimes.com' ([Errno 11001] getaddrinfo failed)"))
+2026-05-04 11:05:33 [INFO] data — Moneycontrol — fetched 25 articles
+2026-05-04 11:05:33 [INFO] data — NewsAPI key found — fetching advanced real-time news for AAPL...
+2026-05-04 11:05:34 [INFO] data — NewsAPI — fetched 30 articles
+2026-05-04 11:05:34 [INFO] data — News saved → C:\Users\ABHI\python project ca\data\news_data.csv (55 rows)
+2026-05-04 11:05:34 [INFO] sentiment — Computing sentiment for 55 rows …
+2026-05-04 11:05:34 [INFO] sentiment — Sentiment distribution — Positive: 32 | Neutral: 16 | Negative: 7
+2026-05-04 11:06:10 [INFO] data — Starting news collection for AAPL …
+2026-05-04 11:06:12 [INFO] data — Yahoo RSS — fetched 20 articles for AAPL
+2026-05-04 11:06:15 [INFO] data — Economic Times — fetched 16 articles
+2026-05-04 11:06:19 [INFO] data — Moneycontrol — fetched 25 articles
+2026-05-04 11:06:19 [INFO] data — NewsAPI key found — fetching advanced real-time news for AAPL...
+2026-05-04 11:06:20 [INFO] data — NewsAPI — fetched 30 articles
+2026-05-04 11:06:20 [INFO] data — News saved → C:\Users\ABHI\python project ca\data\news_data.csv (90 rows)
+2026-05-04 11:06:20 [INFO] sentiment — Computing sentiment for 90 rows …
+2026-05-04 11:06:20 [INFO] sentiment — Sentiment distribution — Positive: 52 | Neutral: 25 | Negative: 13
+2026-05-04 11:06:20 [INFO] data — Fetching stock data for AAPL …
+2026-05-04 11:06:20 [INFO] data — Stock data saved → C:\Users\ABHI\python project ca\data\stock_data.csv (251 rows)
+2026-05-04 11:06:20 [INFO] data — Merged dataset saved → C:\Users\ABHI\python project ca\data\merged_dataset.csv (251 rows)
+2026-05-04 11:06:20 [INFO] features — Engineering features on 251 rows …
+2026-05-04 11:06:20 [INFO] features — Feature matrix: 231 rows × 31 features
+2026-05-04 11:06:20 [INFO] features — Features saved → C:\Users\ABHI\python project ca\data\features.csv
+2026-05-04 11:06:21 [INFO] data — Fetching screener data for 21 tickers...
+2026-05-04 11:08:49 [INFO] data — Starting news collection for AAPL …
+2026-05-04 11:08:52 [INFO] data — Yahoo RSS — fetched 20 articles for AAPL
+2026-05-04 11:08:54 [INFO] data — Economic Times — fetched 16 articles
+2026-05-04 11:08:58 [INFO] data — Moneycontrol — fetched 25 articles
+2026-05-04 11:08:58 [INFO] data — NewsAPI key found — fetching advanced real-time news for AAPL...
+2026-05-04 11:08:59 [INFO] data — NewsAPI — fetched 30 articles
+2026-05-04 11:08:59 [INFO] data — News saved → C:\Users\ABHI\python project ca\data\news_data.csv (90 rows)
+2026-05-04 11:08:59 [INFO] sentiment — Computing sentiment for 90 rows …
+2026-05-04 11:08:59 [INFO] sentiment — Sentiment distribution — Positive: 52 | Neutral: 25 | Negative: 13
+2026-05-04 11:08:59 [INFO] data — Fetching stock data for AAPL …
+2026-05-04 11:09:02 [INFO] data — Stock data saved → C:\Users\ABHI\python project ca\data\stock_data.csv (251 rows)
+2026-05-04 11:09:02 [INFO] data — Merged dataset saved → C:\Users\ABHI\python project ca\data\merged_dataset.csv (251 rows)
+2026-05-04 11:09:02 [INFO] features — Engineering features on 251 rows …
+2026-05-04 11:09:02 [INFO] features — Feature matrix: 231 rows × 31 features
+2026-05-04 11:09:02 [INFO] features — Features saved → C:\Users\ABHI\python project ca\data\features.csv
+2026-05-04 11:09:02 [INFO] data — Fetching screener data for 21 tickers...
+2026-05-04 11:13:07 [INFO] data — Starting news collection for AAPL …
+2026-05-04 11:13:10 [INFO] data — Yahoo RSS — fetched 20 articles for AAPL
+2026-05-04 11:13:12 [INFO] data — Economic Times — fetched 16 articles
+2026-05-04 11:13:16 [INFO] data — Moneycontrol — fetched 25 articles
+2026-05-04 11:13:16 [INFO] data — NewsAPI key found — fetching advanced real-time news for AAPL...
+2026-05-04 11:13:16 [INFO] data — NewsAPI — fetched 30 articles
+2026-05-04 11:13:16 [INFO] data — News saved → C:\Users\ABHI\python project ca\data\news_data.csv (90 rows)
+2026-05-04 11:13:16 [INFO] sentiment — Computing sentiment for 90 rows …
+2026-05-04 11:13:16 [INFO] sentiment — Sentiment distribution — Positive: 52 | Neutral: 25 | Negative: 13
+2026-05-04 11:13:16 [INFO] data — Fetching stock data for AAPL …
+2026-05-04 11:13:17 [INFO] data — Stock data saved → C:\Users\ABHI\python project ca\data\stock_data.csv (251 rows)
+2026-05-04 11:13:17 [INFO] data — Merged dataset saved → C:\Users\ABHI\python project ca\data\merged_dataset.csv (251 rows)
+2026-05-04 11:13:17 [INFO] features — Engineering features on 251 rows …
+2026-05-04 11:13:17 [INFO] features — Feature matrix: 231 rows × 31 features
+2026-05-04 11:13:17 [INFO] features — Features saved → C:\Users\ABHI\python project ca\data\features.csv
+2026-05-04 11:13:17 [INFO] data — Fetching screener data for 21 tickers...
+2026-05-04 11:14:47 [INFO] data — Starting news collection for AAPL …
+2026-05-04 11:14:50 [INFO] data — Yahoo RSS — fetched 20 articles for AAPL
+2026-05-04 11:14:52 [INFO] data — Economic Times — fetched 16 articles
+2026-05-04 11:14:53 [INFO] data — Moneycontrol — fetched 25 articles
+2026-05-04 11:14:53 [INFO] data — NewsAPI key found — fetching advanced real-time news for AAPL...
+2026-05-04 11:14:54 [INFO] data — NewsAPI — fetched 30 articles
+2026-05-04 11:14:54 [INFO] data — News saved → C:\Users\ABHI\python project ca\data\news_data.csv (90 rows)
+2026-05-04 11:14:54 [INFO] sentiment — Computing sentiment for 90 rows …
+2026-05-04 11:14:54 [INFO] sentiment — Sentiment distribution — Positive: 52 | Neutral: 25 | Negative: 13
+2026-05-04 11:14:54 [INFO] data — Fetching stock data for AAPL …
+2026-05-04 11:14:55 [INFO] data — Stock data saved → C:\Users\ABHI\python project ca\data\stock_data.csv (251 rows)
+2026-05-04 11:14:55 [INFO] data — Merged dataset saved → C:\Users\ABHI\python project ca\data\merged_dataset.csv (251 rows)
+2026-05-04 11:14:55 [INFO] features — Engineering features on 251 rows …
+2026-05-04 11:14:55 [INFO] features — Feature matrix: 231 rows × 31 features
+2026-05-04 11:14:55 [INFO] features — Features saved → C:\Users\ABHI\python project ca\data\features.csv
+2026-05-04 11:14:56 [INFO] data — Fetching screener data for 21 tickers...
+2026-05-04 11:25:08 [INFO] data — Starting news collection for AAPL …
+2026-05-04 11:25:11 [INFO] data — Yahoo RSS — fetched 20 articles for AAPL
+2026-05-04 11:25:15 [INFO] data — Economic Times — fetched 16 articles
+2026-05-04 11:25:19 [INFO] data — Moneycontrol — fetched 25 articles
+2026-05-04 11:25:19 [INFO] data — NewsAPI key found — fetching advanced real-time news for AAPL...
+2026-05-04 11:25:19 [INFO] data — NewsAPI — fetched 30 articles
+2026-05-04 11:25:19 [INFO] data — News saved → C:\Users\ABHI\python project ca\data\news_data.csv (90 rows)
+2026-05-04 11:25:19 [INFO] sentiment — Computing sentiment for 90 rows …
+2026-05-04 11:25:19 [INFO] sentiment — Sentiment distribution — Positive: 51 | Neutral: 24 | Negative: 15
+2026-05-04 11:25:19 [INFO] data — Fetching stock data for AAPL …
+2026-05-04 11:25:23 [INFO] data — Stock data saved → C:\Users\ABHI\python project ca\data\stock_data.csv (251 rows)
+2026-05-04 11:25:23 [INFO] data — Merged dataset saved → C:\Users\ABHI\python project ca\data\merged_dataset.csv (251 rows)
+2026-05-04 11:25:23 [INFO] features — Engineering features on 251 rows …
+2026-05-04 11:25:23 [INFO] features — Feature matrix: 201 rows × 32 features
+2026-05-04 11:25:23 [INFO] features — Features saved → C:\Users\ABHI\python project ca\data\features.csv
+2026-05-04 11:25:23 [INFO] data — Fetching screener data for 21 tickers...
+2026-05-04 11:37:05 [INFO] data — Collecting news for AAPL...
+2026-05-04 11:37:07 [INFO] data — Yahoo RSS: 20 articles for AAPL
+2026-05-04 11:37:10 [INFO] data — Economic Times: 16 articles
+2026-05-04 11:37:13 [INFO] data — Moneycontrol: 25 articles
+2026-05-04 11:37:13 [INFO] data — Fetching from NewsAPI for AAPL...
+2026-05-04 11:37:14 [INFO] data — NewsAPI: 30 articles
+2026-05-04 11:37:14 [INFO] data — News saved -> C:\Users\ABHI\python project ca\data\news_data.csv (90 rows)
+2026-05-04 11:37:14 [INFO] sentiment — Computing sentiment for 90 rows ...
+2026-05-04 11:37:14 [INFO] sentiment — Distribution: 52 positive, 23 neutral, 15 negative
+2026-05-04 11:37:14 [INFO] data — Fetching stock data for AAPL...
+2026-05-04 11:37:16 [INFO] data — Stock data saved -> C:\Users\ABHI\python project ca\data\stock_data.csv (251 rows)
+2026-05-04 11:37:16 [INFO] data — Merged data saved -> C:\Users\ABHI\python project ca\data\merged_dataset.csv (251 rows)
+2026-05-04 11:37:16 [INFO] features — Building features on 251 rows
+2026-05-04 11:37:16 [INFO] features — Feature matrix ready: 201 rows x 32 features
+2026-05-04 11:37:16 [INFO] features — Features saved to C:\Users\ABHI\python project ca\data\features.csv
+2026-05-04 11:37:16 [INFO] data — Screener: fetching 21 tickers...
+2026-05-04 11:38:05 [INFO] model — Scaler saved -> C:\Users\ABHI\python project ca\models\scaler.pkl
+2026-05-04 11:38:05 [INFO] model — Training Logistic Regression...
+2026-05-04 11:38:05 [INFO] model — Logistic Regression -> Acc: 0.4878 | Prec: 0.5238 | Rec: 0.5000 | F1: 0.5116
+2026-05-04 11:38:05 [INFO] model — Training Random Forest...
+2026-05-04 11:38:06 [INFO] model — Top features:
+volatility       0.076951
+macd             0.069000
+macd_hist        0.068984
+volume_change    0.045271
+volume           0.043982
+2026-05-04 11:38:06 [INFO] model — Random Forest -> Acc: 0.5854 | Prec: 0.5641 | Rec: 1.0000 | F1: 0.7213
+2026-05-04 11:38:06 [INFO] model — Training LSTM (seq_len=10)...
+2026-05-04 11:38:13 [INFO] model — LSTM saved -> C:\Users\ABHI\python project ca\models\lstm_model.keras
+2026-05-04 11:38:13 [INFO] model — LSTM -> Acc: 0.4194 | Prec: 0.0000 | Rec: 0.0000 | F1: 0.0000
+2026-05-04 11:38:13 [INFO] model — Best model: Random Forest (F1=0.7213)
+2026-05-04 11:38:13 [INFO] model — Loading best model: Random Forest
+2026-05-04 11:38:40 [INFO] model — Loading best model: Random Forest
+2026-05-04 11:38:41 [INFO] model — Loading best model: Random Forest
+2026-05-04 11:39:19 [INFO] data — Collecting news for AAPL...
+2026-05-04 11:39:22 [INFO] data — Yahoo RSS: 20 articles for AAPL
+2026-05-04 11:39:25 [INFO] data — Economic Times: 16 articles
+2026-05-04 11:39:28 [INFO] data — Moneycontrol: 25 articles
+2026-05-04 11:39:28 [INFO] data — Fetching from NewsAPI for AAPL...
+2026-05-04 11:39:28 [INFO] data — NewsAPI: 30 articles
+2026-05-04 11:39:28 [INFO] data — News saved -> C:\Users\ABHI\python project ca\data\news_data.csv (90 rows)
+2026-05-04 11:39:28 [INFO] sentiment — Computing sentiment for 90 rows ...
+2026-05-04 11:39:28 [INFO] sentiment — Distribution: 52 positive, 24 neutral, 14 negative
+2026-05-04 11:39:28 [INFO] data — Fetching stock data for AAPL...
+2026-05-04 11:39:29 [INFO] data — Stock data saved -> C:\Users\ABHI\python project ca\data\stock_data.csv (251 rows)
+2026-05-04 11:39:29 [INFO] data — Merged data saved -> C:\Users\ABHI\python project ca\data\merged_dataset.csv (251 rows)
+2026-05-04 11:39:29 [INFO] features — Building features on 251 rows
+2026-05-04 11:39:29 [INFO] features — Feature matrix ready: 201 rows x 32 features
+2026-05-04 11:39:29 [INFO] features — Features saved to C:\Users\ABHI\python project ca\data\features.csv
+2026-05-04 11:39:29 [INFO] data — Screener: fetching 21 tickers...
+2026-05-04 11:39:51 [INFO] model — Scaler saved -> C:\Users\ABHI\python project ca\models\scaler.pkl
+2026-05-04 11:39:51 [INFO] model — Training Logistic Regression...
+2026-05-04 11:39:51 [INFO] model — Logistic Regression -> Acc: 0.4878 | Prec: 0.5238 | Rec: 0.5000 | F1: 0.5116
+2026-05-04 11:39:51 [INFO] model — Training Random Forest...
+2026-05-04 11:39:52 [INFO] model — Top features:
+volatility       0.076951
+macd             0.069000
+macd_hist        0.068984
+volume_change    0.045271
+volume           0.043982
+2026-05-04 11:39:52 [INFO] model — Random Forest -> Acc: 0.5854 | Prec: 0.5641 | Rec: 1.0000 | F1: 0.7213
+2026-05-04 11:39:52 [INFO] model — Training LSTM (seq_len=10)...
+2026-05-04 11:39:53 [INFO] data — Collecting news for AAPL...
+2026-05-04 11:39:55 [INFO] data — Yahoo RSS: 20 articles for AAPL
+2026-05-04 11:39:57 [INFO] data — Economic Times: 16 articles
+2026-05-04 11:39:58 [INFO] model — LSTM saved -> C:\Users\ABHI\python project ca\models\lstm_model.keras
+2026-05-04 11:39:58 [INFO] model — LSTM -> Acc: 0.5806 | Prec: 0.6667 | Rec: 0.5556 | F1: 0.6061
+2026-05-04 11:39:58 [INFO] model — Best model: Random Forest (F1=0.7213)
+2026-05-04 11:40:01 [INFO] data — Moneycontrol: 25 articles
+2026-05-04 11:40:01 [INFO] data — Fetching from NewsAPI for AAPL...
+2026-05-04 11:40:02 [INFO] data — NewsAPI: 30 articles
+2026-05-04 11:40:02 [INFO] data — News saved -> C:\Users\ABHI\python project ca\data\news_data.csv (90 rows)
+2026-05-04 11:40:02 [INFO] sentiment — Computing sentiment for 90 rows ...
+2026-05-04 11:40:02 [INFO] sentiment — Distribution: 52 positive, 24 neutral, 14 negative
+2026-05-04 11:40:02 [INFO] data — Fetching stock data for AAPL...
+2026-05-04 11:40:03 [INFO] data — Stock data saved -> C:\Users\ABHI\python project ca\data\stock_data.csv (251 rows)
+2026-05-04 11:40:03 [INFO] data — Merged data saved -> C:\Users\ABHI\python project ca\data\merged_dataset.csv (251 rows)
+2026-05-04 11:40:03 [INFO] features — Building features on 251 rows
+2026-05-04 11:40:03 [INFO] features — Feature matrix ready: 201 rows x 32 features
+2026-05-04 11:40:03 [INFO] features — Features saved to C:\Users\ABHI\python project ca\data\features.csv
+2026-05-04 11:46:15 [INFO] data — Collecting news for AAPL...
+2026-05-04 11:46:15 [WARNING] data — Attempt 1 failed for https://feeds.finance.yahoo.com/rss/2.0/headline?s=AAPL&region=US&lang=en-US: HTTPSConnectionPool(host='feeds.finance.yahoo.com', port=443): Max retries exceeded with url: /rss/2.0/headline?s=AAPL&region=US&lang=en-US (Caused by NameResolutionError("HTTPSConnection(host='feeds.finance.yahoo.com', port=443): Failed to resolve 'feeds.finance.yahoo.com' ([Errno 11001] getaddrinfo failed)"))
+2026-05-04 11:46:16 [WARNING] data — Attempt 2 failed for https://feeds.finance.yahoo.com/rss/2.0/headline?s=AAPL&region=US&lang=en-US: HTTPSConnectionPool(host='feeds.finance.yahoo.com', port=443): Max retries exceeded with url: /rss/2.0/headline?s=AAPL&region=US&lang=en-US (Caused by NameResolutionError("HTTPSConnection(host='feeds.finance.yahoo.com', port=443): Failed to resolve 'feeds.finance.yahoo.com' ([Errno 11001] getaddrinfo failed)"))
+2026-05-04 11:46:18 [WARNING] data — Attempt 3 failed for https://feeds.finance.yahoo.com/rss/2.0/headline?s=AAPL&region=US&lang=en-US: HTTPSConnectionPool(host='feeds.finance.yahoo.com', port=443): Max retries exceeded with url: /rss/2.0/headline?s=AAPL&region=US&lang=en-US (Caused by NameResolutionError("HTTPSConnection(host='feeds.finance.yahoo.com', port=443): Failed to resolve 'feeds.finance.yahoo.com' ([Errno 11001] getaddrinfo failed)"))
+2026-05-04 11:46:22 [ERROR] data — Couldn't reach Yahoo RSS for AAPL
+2026-05-04 11:46:22 [WARNING] data — Attempt 1 failed for https://economictimes.indiatimes.com/markets/stocks/news: HTTPSConnectionPool(host='economictimes.indiatimes.com', port=443): Max retries exceeded with url: /markets/stocks/news (Caused by NameResolutionError("HTTPSConnection(host='economictimes.indiatimes.com', port=443): Failed to resolve 'economictimes.indiatimes.com' ([Errno 11001] getaddrinfo failed)"))
+2026-05-04 11:46:23 [WARNING] data — Attempt 2 failed for https://economictimes.indiatimes.com/markets/stocks/news: HTTPSConnectionPool(host='economictimes.indiatimes.com', port=443): Max retries exceeded with url: /markets/stocks/news (Caused by NameResolutionError("HTTPSConnection(host='economictimes.indiatimes.com', port=443): Failed to resolve 'economictimes.indiatimes.com' ([Errno 11001] getaddrinfo failed)"))
+2026-05-04 11:46:25 [WARNING] data — Attempt 3 failed for https://economictimes.indiatimes.com/markets/stocks/news: HTTPSConnectionPool(host='economictimes.indiatimes.com', port=443): Max retries exceeded with url: /markets/stocks/news (Caused by NameResolutionError("HTTPSConnection(host='economictimes.indiatimes.com', port=443): Failed to resolve 'economictimes.indiatimes.com' ([Errno 11001] getaddrinfo failed)"))
+2026-05-04 11:46:29 [WARNING] data — Attempt 1 failed for https://www.moneycontrol.com/news/business/markets/: HTTPSConnectionPool(host='www.moneycontrol.com', port=443): Max retries exceeded with url: /news/business/markets/ (Caused by NameResolutionError("HTTPSConnection(host='www.moneycontrol.com', port=443): Failed to resolve 'www.moneycontrol.com' ([Errno 11001] getaddrinfo failed)"))
+2026-05-04 11:46:30 [WARNING] data — Attempt 2 failed for https://www.moneycontrol.com/news/business/markets/: HTTPSConnectionPool(host='www.moneycontrol.com', port=443): Max retries exceeded with url: /news/business/markets/ (Caused by NameResolutionError("HTTPSConnection(host='www.moneycontrol.com', port=443): Failed to resolve 'www.moneycontrol.com' ([Errno 11001] getaddrinfo failed)"))
+2026-05-04 11:46:32 [WARNING] data — Attempt 3 failed for https://www.moneycontrol.com/news/business/markets/: HTTPSConnectionPool(host='www.moneycontrol.com', port=443): Max retries exceeded with url: /news/business/markets/ (Caused by NameResolutionError("HTTPSConnection(host='www.moneycontrol.com', port=443): Failed to resolve 'www.moneycontrol.com' ([Errno 11001] getaddrinfo failed)"))
+2026-05-04 11:46:36 [INFO] data — Fetching from NewsAPI for AAPL...
+2026-05-04 11:46:36 [WARNING] data — NewsAPI failed: HTTPSConnectionPool(host='newsapi.org', port=443): Max retries exceeded with url: /v2/everything?q=AAPL&language=en&sortBy=publishedAt&apiKey=9ee9909db8e84d66914ec7ea836b3c9d (Caused by NameResolutionError("HTTPSConnection(host='newsapi.org', port=443): Failed to resolve 'newsapi.org' ([Errno 11001] getaddrinfo failed)"))
+2026-05-04 11:46:36 [WARNING] app — News collection issue: No objects to concatenate
+2026-05-04 11:46:36 [INFO] data — Fetching stock data for AAPL...
+2026-05-04 11:46:36 [WARNING] data — No stock data for AAPL
+2026-05-04 11:46:36 [INFO] data — Screener: fetching 21 tickers...
+2026-05-04 11:54:29 [INFO] data — Collecting news for AAPL...
+2026-05-04 11:54:31 [INFO] data — Yahoo RSS: 20 articles for AAPL
+2026-05-04 11:54:34 [INFO] data — Economic Times: 16 articles
+2026-05-04 11:54:36 [INFO] data — Moneycontrol: 25 articles
+2026-05-04 11:54:36 [INFO] data — Fetching from NewsAPI for AAPL...
+2026-05-04 11:54:38 [INFO] data — NewsAPI: 30 articles
+2026-05-04 11:54:38 [INFO] data — News saved -> C:\Users\ABHI\python project ca\data\news_data.csv (90 rows)
+2026-05-04 11:54:38 [INFO] sentiment — Computing sentiment for 90 rows ...
+2026-05-04 11:54:38 [INFO] sentiment — Distribution: 53 positive, 23 neutral, 14 negative
+2026-05-04 11:54:38 [INFO] data — Fetching stock data for AAPL...
+2026-05-04 11:54:40 [INFO] data — Stock data saved -> C:\Users\ABHI\python project ca\data\stock_data.csv (251 rows)
+2026-05-04 11:54:40 [INFO] data — Merged data saved -> C:\Users\ABHI\python project ca\data\merged_dataset.csv (251 rows)
+2026-05-04 11:54:40 [INFO] features — Building features on 251 rows
+2026-05-04 11:54:40 [INFO] features — Feature matrix ready: 201 rows x 32 features
+2026-05-04 11:54:40 [INFO] features — Features saved to C:\Users\ABHI\python project ca\data\features.csv
+2026-05-04 11:54:41 [INFO] data — Screener: fetching 21 tickers...
+2026-05-04 11:55:05 [INFO] model — Scaler saved -> C:\Users\ABHI\python project ca\models\scaler.pkl
+2026-05-04 11:55:05 [INFO] model — Training Logistic Regression...
+2026-05-04 11:55:05 [INFO] model — Logistic Regression -> Acc: 0.4878 | Prec: 0.5238 | Rec: 0.5000 | F1: 0.5116
+2026-05-04 11:55:05 [INFO] model — Training Random Forest...
+2026-05-04 11:55:06 [INFO] model — Top features:
+volatility       0.076951
+macd             0.069000
+macd_hist        0.068984
+volume_change    0.045271
+volume           0.043982
+2026-05-04 11:55:06 [INFO] model — Random Forest -> Acc: 0.5854 | Prec: 0.5641 | Rec: 1.0000 | F1: 0.7213
+2026-05-04 11:55:06 [INFO] model — Training LSTM (seq_len=10)...
+2026-05-04 11:55:12 [INFO] model — LSTM saved -> C:\Users\ABHI\python project ca\models\lstm_model.keras
+2026-05-04 11:55:12 [INFO] model — LSTM -> Acc: 0.5484 | Prec: 0.5714 | Rec: 0.8889 | F1: 0.6957
+2026-05-04 11:55:12 [INFO] model — Best model: Random Forest (F1=0.7213)
+2026-05-04 11:55:12 [INFO] model — Loading best model: Random Forest
+2026-05-04 11:56:16 [INFO] data — Collecting news for AAPL...
+2026-05-04 11:56:20 [INFO] data — Yahoo RSS: 20 articles for AAPL
+2026-05-04 11:56:23 [INFO] data — Economic Times: 16 articles
+2026-05-04 11:56:26 [INFO] data — Moneycontrol: 25 articles
+2026-05-04 11:56:26 [INFO] data — Fetching from NewsAPI for AAPL...
+2026-05-04 11:56:27 [INFO] data — Collecting news for AAPL...
+2026-05-04 11:56:27 [INFO] data — NewsAPI: 30 articles
+2026-05-04 11:56:27 [INFO] data — News saved -> C:\Users\ABHI\python project ca\data\news_data.csv (90 rows)
+2026-05-04 11:56:27 [INFO] sentiment — Computing sentiment for 90 rows ...
+2026-05-04 11:56:28 [INFO] sentiment — Distribution: 53 positive, 23 neutral, 14 negative
+2026-05-04 11:56:31 [INFO] data — Yahoo RSS: 20 articles for AAPL
+2026-05-04 11:56:34 [INFO] data — Economic Times: 16 articles
+2026-05-04 11:56:37 [INFO] data — Moneycontrol: 25 articles
+2026-05-04 11:56:37 [INFO] data — Fetching from NewsAPI for AAPL...
+2026-05-04 11:56:38 [INFO] data — NewsAPI: 30 articles
+2026-05-04 11:56:38 [INFO] data — News saved -> C:\Users\ABHI\python project ca\data\news_data.csv (90 rows)
+2026-05-04 11:56:38 [INFO] sentiment — Computing sentiment for 90 rows ...
+2026-05-04 11:56:38 [INFO] sentiment — Distribution: 53 positive, 23 neutral, 14 negative
+2026-05-04 11:56:38 [INFO] data — Fetching stock data for AAPL...
+2026-05-04 12:00:06 [WARNING] data — No stock data for AAPL
+2026-05-04 14:01:39 [INFO] data — Collecting news for AAPL...
+2026-05-04 14:01:42 [INFO] data — Yahoo RSS: 20 articles for AAPL
+2026-05-04 14:01:44 [INFO] data — Economic Times: 16 articles
+2026-05-04 14:01:46 [INFO] data — Moneycontrol: 25 articles
+2026-05-04 14:01:46 [INFO] data — Fetching from NewsAPI for AAPL...
+2026-05-04 14:01:46 [INFO] data — NewsAPI: 30 articles
+2026-05-04 14:01:46 [INFO] data — News saved -> C:\Users\ABHI\python project ca\data\news_data.csv (90 rows)
+2026-05-04 14:01:46 [INFO] sentiment — Computing sentiment for 90 rows ...
+2026-05-04 14:01:46 [INFO] sentiment — Distribution: 57 positive, 20 neutral, 13 negative
+2026-05-04 14:01:46 [INFO] data — Fetching stock data for AAPL...
+2026-05-04 14:01:48 [INFO] data — Stock data saved -> C:\Users\ABHI\python project ca\data\stock_data.csv (251 rows)
+2026-05-04 14:01:48 [INFO] data — Merged data saved -> C:\Users\ABHI\python project ca\data\merged_dataset.csv (251 rows)
+2026-05-04 14:01:48 [INFO] features — Building features on 251 rows
+2026-05-04 14:01:48 [INFO] features — Feature matrix ready: 201 rows x 32 features
+2026-05-04 14:01:48 [INFO] features — Features saved to C:\Users\ABHI\python project ca\data\features.csv
+2026-05-04 14:01:48 [INFO] data — Screener: fetching 21 tickers...
+2026-05-04 14:01:57 [INFO] model — Scaler saved -> C:\Users\ABHI\python project ca\models\scaler.pkl
+2026-05-04 14:01:57 [INFO] model — Training Logistic Regression...
+2026-05-04 14:01:57 [INFO] model — Logistic Regression -> Acc: 0.4878 | Prec: 0.5238 | Rec: 0.5000 | F1: 0.5116
+2026-05-04 14:01:57 [INFO] model — Training Random Forest...
+2026-05-04 14:01:58 [INFO] model — Top features:
+volatility       0.076951
+macd             0.069000
+macd_hist        0.068984
+volume_change    0.045271
+volume           0.043982
+2026-05-04 14:01:58 [INFO] model — Random Forest -> Acc: 0.5854 | Prec: 0.5641 | Rec: 1.0000 | F1: 0.7213
+2026-05-04 14:01:58 [INFO] model — Training LSTM (seq_len=10)...
+2026-05-04 14:02:03 [INFO] model — LSTM saved -> C:\Users\ABHI\python project ca\models\lstm_model.keras
+2026-05-04 14:02:03 [INFO] model — LSTM -> Acc: 0.5484 | Prec: 0.6250 | Rec: 0.5556 | F1: 0.5882
+2026-05-04 14:02:03 [INFO] model — Best model: Random Forest (F1=0.7213)
+2026-05-04 14:02:04 [INFO] model — Loading best model: Random Forest
+2026-05-04 14:07:44 [INFO] data — Collecting news for AAPL...
+2026-05-04 14:07:46 [INFO] data — Yahoo RSS: 20 articles for AAPL
+2026-05-04 14:07:48 [INFO] data — Economic Times: 16 articles
+2026-05-04 14:07:51 [INFO] data — Moneycontrol: 25 articles
+2026-05-04 14:07:51 [INFO] data — Fetching from NewsAPI for AAPL...
+2026-05-04 14:07:52 [INFO] data — NewsAPI: 30 articles
+2026-05-04 14:07:52 [INFO] data — News saved -> C:\Users\ABHI\python project ca\data\news_data.csv (90 rows)
+2026-05-04 14:07:52 [INFO] sentiment — Computing sentiment for 90 rows ...
+2026-05-04 14:07:52 [INFO] sentiment — Distribution: 58 positive, 20 neutral, 12 negative
+2026-05-04 14:07:52 [INFO] data — Fetching stock data for AAPL...
+2026-05-04 14:07:53 [INFO] data — Stock data saved -> C:\Users\ABHI\python project ca\data\stock_data.csv (251 rows)
+2026-05-04 14:07:53 [INFO] data — Merged data saved -> C:\Users\ABHI\python project ca\data\merged_dataset.csv (251 rows)
+2026-05-04 14:07:53 [INFO] features — Building features on 251 rows
+2026-05-04 14:07:53 [INFO] features — Feature matrix ready: 201 rows x 32 features
+2026-05-04 14:07:53 [INFO] features — Features saved to C:\Users\ABHI\python project ca\data\features.csv
+2026-05-04 14:07:54 [INFO] data — Screener: fetching 21 tickers...
+2026-05-04 14:07:58 [INFO] model — Scaler saved -> C:\Users\ABHI\python project ca\models\scaler.pkl
+2026-05-04 14:07:58 [INFO] model — Training Logistic Regression...
+2026-05-04 14:07:58 [INFO] model — Logistic Regression -> Acc: 0.4878 | Prec: 0.5238 | Rec: 0.5000 | F1: 0.5116
+2026-05-04 14:07:58 [INFO] model — Training Random Forest...
+2026-05-04 14:07:59 [INFO] model — Top features:
+volatility       0.076951
+macd             0.069000
+macd_hist        0.068984
+volume_change    0.045271
+volume           0.043982
+2026-05-04 14:07:59 [INFO] model — Random Forest -> Acc: 0.5854 | Prec: 0.5641 | Rec: 1.0000 | F1: 0.7213
+2026-05-04 14:07:59 [INFO] model — Training LSTM (seq_len=10)...
+2026-05-04 14:08:05 [INFO] model — LSTM saved -> C:\Users\ABHI\python project ca\models\lstm_model.keras
+2026-05-04 14:08:05 [INFO] model — LSTM -> Acc: 0.5806 | Prec: 0.5926 | Rec: 0.8889 | F1: 0.7111
+2026-05-04 14:08:05 [INFO] model — Best model: Random Forest (F1=0.7213)
+2026-05-04 14:08:06 [INFO] model — Loading best model: Random Forest
+2026-05-04 14:16:02 [INFO] data — Collecting news for AAPL...
+2026-05-04 14:16:05 [INFO] data — Yahoo RSS: 20 articles for AAPL
+2026-05-04 14:16:09 [INFO] data — Economic Times: 16 articles
+2026-05-04 14:16:11 [INFO] data — Moneycontrol: 25 articles
+2026-05-04 14:16:11 [INFO] data — Fetching from NewsAPI for AAPL...
+2026-05-04 14:16:11 [INFO] data — NewsAPI: 30 articles
+2026-05-04 14:16:11 [INFO] data — News saved -> C:\Users\ABHI\python project ca\data\news_data.csv (91 rows)
+2026-05-04 14:16:11 [INFO] sentiment — Computing sentiment for 91 rows ...
+2026-05-04 14:16:12 [INFO] sentiment — Distribution: 58 positive, 21 neutral, 12 negative
+2026-05-04 14:16:12 [INFO] data — Fetching stock data for AAPL...
+2026-05-04 14:16:12 [INFO] data — Stock data saved -> C:\Users\ABHI\python project ca\data\stock_data.csv (251 rows)
+2026-05-04 14:16:12 [INFO] data — Merged data saved -> C:\Users\ABHI\python project ca\data\merged_dataset.csv (251 rows)
+2026-05-04 14:16:12 [INFO] features — Building features on 251 rows
+2026-05-04 14:16:12 [INFO] features — Feature matrix ready: 201 rows x 32 features
+2026-05-04 14:16:12 [INFO] features — Features saved to C:\Users\ABHI\python project ca\data\features.csv
+2026-05-04 14:16:12 [INFO] data — Screener: fetching 21 tickers...
+2026-05-04 14:16:29 [INFO] model — Scaler saved -> C:\Users\ABHI\python project ca\models\scaler.pkl
+2026-05-04 14:16:29 [INFO] model — Training Logistic Regression...
+2026-05-04 14:16:29 [INFO] model — Logistic Regression -> Acc: 0.4878 | Prec: 0.5238 | Rec: 0.5000 | F1: 0.5116
+2026-05-04 14:16:29 [INFO] model — Training Random Forest...
+2026-05-04 14:16:29 [INFO] model — Top features:
+volatility       0.076951
+macd             0.069000
+macd_hist        0.068984
+volume_change    0.045271
+volume           0.043982
+2026-05-04 14:16:29 [INFO] model — Random Forest -> Acc: 0.5854 | Prec: 0.5641 | Rec: 1.0000 | F1: 0.7213
+2026-05-04 14:16:29 [INFO] model — Training LSTM (seq_len=10)...
+2026-05-04 14:16:36 [INFO] model — LSTM saved -> C:\Users\ABHI\python project ca\models\lstm_model.keras
+2026-05-04 14:16:36 [INFO] model — LSTM -> Acc: 0.5161 | Prec: 0.5714 | Rec: 0.6667 | F1: 0.6154
+2026-05-04 14:16:36 [INFO] model — Best model: Random Forest (F1=0.7213)
+2026-05-04 14:16:36 [INFO] model — Loading best model: Random Forest
+2026-05-04 14:20:54 [INFO] model — Loading best model: Random Forest
+2026-05-04 14:28:50 [INFO] data — Collecting news for AAPL...
+2026-05-04 14:28:50 [WARNING] data — Attempt 1 failed for https://feeds.finance.yahoo.com/rss/2.0/headline?s=AAPL&region=US&lang=en-US: HTTPSConnectionPool(host='feeds.finance.yahoo.com', port=443): Max retries exceeded with url: /rss/2.0/headline?s=AAPL&region=US&lang=en-US (Caused by NameResolutionError("HTTPSConnection(host='feeds.finance.yahoo.com', port=443): Failed to resolve 'feeds.finance.yahoo.com' ([Errno 11001] getaddrinfo failed)"))
+2026-05-04 14:28:51 [WARNING] data — Attempt 2 failed for https://feeds.finance.yahoo.com/rss/2.0/headline?s=AAPL&region=US&lang=en-US: HTTPSConnectionPool(host='feeds.finance.yahoo.com', port=443): Max retries exceeded with url: /rss/2.0/headline?s=AAPL&region=US&lang=en-US (Caused by NameResolutionError("HTTPSConnection(host='feeds.finance.yahoo.com', port=443): Failed to resolve 'feeds.finance.yahoo.com' ([Errno 11001] getaddrinfo failed)"))
+2026-05-04 14:28:53 [WARNING] data — Attempt 3 failed for https://feeds.finance.yahoo.com/rss/2.0/headline?s=AAPL&region=US&lang=en-US: HTTPSConnectionPool(host='feeds.finance.yahoo.com', port=443): Max retries exceeded with url: /rss/2.0/headline?s=AAPL&region=US&lang=en-US (Caused by NameResolutionError("HTTPSConnection(host='feeds.finance.yahoo.com', port=443): Failed to resolve 'feeds.finance.yahoo.com' ([Errno 11001] getaddrinfo failed)"))
+2026-05-04 14:28:57 [ERROR] data — Couldn't reach Yahoo RSS for AAPL
+2026-05-04 14:28:57 [WARNING] data — Attempt 1 failed for https://economictimes.indiatimes.com/markets/stocks/news: HTTPSConnectionPool(host='economictimes.indiatimes.com', port=443): Max retries exceeded with url: /markets/stocks/news (Caused by NameResolutionError("HTTPSConnection(host='economictimes.indiatimes.com', port=443): Failed to resolve 'economictimes.indiatimes.com' ([Errno 11001] getaddrinfo failed)"))
+2026-05-04 14:28:58 [WARNING] data — Attempt 2 failed for https://economictimes.indiatimes.com/markets/stocks/news: HTTPSConnectionPool(host='economictimes.indiatimes.com', port=443): Max retries exceeded with url: /markets/stocks/news (Caused by NameResolutionError("HTTPSConnection(host='economictimes.indiatimes.com', port=443): Failed to resolve 'economictimes.indiatimes.com' ([Errno 11001] getaddrinfo failed)"))
+2026-05-04 14:29:00 [WARNING] data — Attempt 3 failed for https://economictimes.indiatimes.com/markets/stocks/news: HTTPSConnectionPool(host='economictimes.indiatimes.com', port=443): Max retries exceeded with url: /markets/stocks/news (Caused by NameResolutionError("HTTPSConnection(host='economictimes.indiatimes.com', port=443): Failed to resolve 'economictimes.indiatimes.com' ([Errno 11001] getaddrinfo failed)"))
+2026-05-04 14:29:04 [WARNING] data — Attempt 1 failed for https://www.moneycontrol.com/news/business/markets/: HTTPSConnectionPool(host='www.moneycontrol.com', port=443): Max retries exceeded with url: /news/business/markets/ (Caused by NameResolutionError("HTTPSConnection(host='www.moneycontrol.com', port=443): Failed to resolve 'www.moneycontrol.com' ([Errno 11001] getaddrinfo failed)"))
+2026-05-04 14:29:05 [WARNING] data — Attempt 2 failed for https://www.moneycontrol.com/news/business/markets/: HTTPSConnectionPool(host='www.moneycontrol.com', port=443): Max retries exceeded with url: /news/business/markets/ (Caused by NameResolutionError("HTTPSConnection(host='www.moneycontrol.com', port=443): Failed to resolve 'www.moneycontrol.com' ([Errno 11001] getaddrinfo failed)"))
+2026-05-04 14:29:06 [INFO] data — Collecting news for AAPL...
+2026-05-04 14:29:06 [WARNING] data — Attempt 1 failed for https://feeds.finance.yahoo.com/rss/2.0/headline?s=AAPL&region=US&lang=en-US: HTTPSConnectionPool(host='feeds.finance.yahoo.com', port=443): Max retries exceeded with url: /rss/2.0/headline?s=AAPL&region=US&lang=en-US (Caused by NameResolutionError("HTTPSConnection(host='feeds.finance.yahoo.com', port=443): Failed to resolve 'feeds.finance.yahoo.com' ([Errno 11001] getaddrinfo failed)"))
+2026-05-04 14:29:07 [WARNING] data — Attempt 2 failed for https://feeds.finance.yahoo.com/rss/2.0/headline?s=AAPL&region=US&lang=en-US: HTTPSConnectionPool(host='feeds.finance.yahoo.com', port=443): Max retries exceeded with url: /rss/2.0/headline?s=AAPL&region=US&lang=en-US (Caused by NameResolutionError("HTTPSConnection(host='feeds.finance.yahoo.com', port=443): Failed to resolve 'feeds.finance.yahoo.com' ([Errno 11001] getaddrinfo failed)"))
+2026-05-04 14:29:07 [WARNING] data — Attempt 3 failed for https://www.moneycontrol.com/news/business/markets/: HTTPSConnectionPool(host='www.moneycontrol.com', port=443): Max retries exceeded with url: /news/business/markets/ (Caused by NameResolutionError("HTTPSConnection(host='www.moneycontrol.com', port=443): Failed to resolve 'www.moneycontrol.com' ([Errno 11001] getaddrinfo failed)"))
+2026-05-04 14:29:09 [WARNING] data — Attempt 3 failed for https://feeds.finance.yahoo.com/rss/2.0/headline?s=AAPL&region=US&lang=en-US: HTTPSConnectionPool(host='feeds.finance.yahoo.com', port=443): Max retries exceeded with url: /rss/2.0/headline?s=AAPL&region=US&lang=en-US (Caused by NameResolutionError("HTTPSConnection(host='feeds.finance.yahoo.com', port=443): Failed to resolve 'feeds.finance.yahoo.com' ([Errno 11001] getaddrinfo failed)"))
+2026-05-04 14:29:11 [INFO] data — Fetching from NewsAPI for AAPL...
+2026-05-04 14:29:11 [WARNING] data — NewsAPI failed: HTTPSConnectionPool(host='newsapi.org', port=443): Max retries exceeded with url: /v2/everything?q=AAPL&language=en&sortBy=publishedAt&apiKey=9ee9909db8e84d66914ec7ea836b3c9d (Caused by NameResolutionError("HTTPSConnection(host='newsapi.org', port=443): Failed to resolve 'newsapi.org' ([Errno 11001] getaddrinfo failed)"))
+2026-05-04 14:29:11 [WARNING] app — News collection issue: No objects to concatenate
+2026-05-04 14:29:13 [ERROR] data — Couldn't reach Yahoo RSS for AAPL
+2026-05-04 14:29:13 [WARNING] data — Attempt 1 failed for https://economictimes.indiatimes.com/markets/stocks/news: HTTPSConnectionPool(host='economictimes.indiatimes.com', port=443): Max retries exceeded with url: /markets/stocks/news (Caused by NameResolutionError("HTTPSConnection(host='economictimes.indiatimes.com', port=443): Failed to resolve 'economictimes.indiatimes.com' ([Errno 11001] getaddrinfo failed)"))
+2026-05-04 14:29:14 [WARNING] data — Attempt 2 failed for https://economictimes.indiatimes.com/markets/stocks/news: HTTPSConnectionPool(host='economictimes.indiatimes.com', port=443): Max retries exceeded with url: /markets/stocks/news (Caused by NameResolutionError("HTTPSConnection(host='economictimes.indiatimes.com', port=443): Failed to resolve 'economictimes.indiatimes.com' ([Errno 11001] getaddrinfo failed)"))
+2026-05-04 14:29:16 [WARNING] data — Attempt 3 failed for https://economictimes.indiatimes.com/markets/stocks/news: HTTPSConnectionPool(host='economictimes.indiatimes.com', port=443): Max retries exceeded with url: /markets/stocks/news (Caused by NameResolutionError("HTTPSConnection(host='economictimes.indiatimes.com', port=443): Failed to resolve 'economictimes.indiatimes.com' ([Errno 11001] getaddrinfo failed)"))
+2026-05-04 14:29:20 [WARNING] data — Attempt 1 failed for https://www.moneycontrol.com/news/business/markets/: HTTPSConnectionPool(host='www.moneycontrol.com', port=443): Max retries exceeded with url: /news/business/markets/ (Caused by NameResolutionError("HTTPSConnection(host='www.moneycontrol.com', port=443): Failed to resolve 'www.moneycontrol.com' ([Errno 11001] getaddrinfo failed)"))
+2026-05-04 14:29:21 [WARNING] data — Attempt 2 failed for https://www.moneycontrol.com/news/business/markets/: HTTPSConnectionPool(host='www.moneycontrol.com', port=443): Max retries exceeded with url: /news/business/markets/ (Caused by NameResolutionError("HTTPSConnection(host='www.moneycontrol.com', port=443): Failed to resolve 'www.moneycontrol.com' ([Errno 11001] getaddrinfo failed)"))
+2026-05-04 14:29:23 [WARNING] data — Attempt 3 failed for https://www.moneycontrol.com/news/business/markets/: HTTPSConnectionPool(host='www.moneycontrol.com', port=443): Max retries exceeded with url: /news/business/markets/ (Caused by NameResolutionError("HTTPSConnection(host='www.moneycontrol.com', port=443): Failed to resolve 'www.moneycontrol.com' ([Errno 11001] getaddrinfo failed)"))
+2026-05-04 14:29:25 [INFO] data — Collecting news for AAPL...
+2026-05-04 14:29:25 [WARNING] data — Attempt 1 failed for https://feeds.finance.yahoo.com/rss/2.0/headline?s=AAPL&region=US&lang=en-US: HTTPSConnectionPool(host='feeds.finance.yahoo.com', port=443): Max retries exceeded with url: /rss/2.0/headline?s=AAPL&region=US&lang=en-US (Caused by NameResolutionError("HTTPSConnection(host='feeds.finance.yahoo.com', port=443): Failed to resolve 'feeds.finance.yahoo.com' ([Errno 11001] getaddrinfo failed)"))
+2026-05-04 14:29:26 [WARNING] data — Attempt 2 failed for https://feeds.finance.yahoo.com/rss/2.0/headline?s=AAPL&region=US&lang=en-US: HTTPSConnectionPool(host='feeds.finance.yahoo.com', port=443): Max retries exceeded with url: /rss/2.0/headline?s=AAPL&region=US&lang=en-US (Caused by NameResolutionError("HTTPSConnection(host='feeds.finance.yahoo.com', port=443): Failed to resolve 'feeds.finance.yahoo.com' ([Errno 11001] getaddrinfo failed)"))
+2026-05-04 14:29:27 [INFO] data — Collecting news for AAPL...
+2026-05-04 14:29:27 [WARNING] data — Attempt 1 failed for https://feeds.finance.yahoo.com/rss/2.0/headline?s=AAPL&region=US&lang=en-US: HTTPSConnectionPool(host='feeds.finance.yahoo.com', port=443): Max retries exceeded with url: /rss/2.0/headline?s=AAPL&region=US&lang=en-US (Caused by NameResolutionError("HTTPSConnection(host='feeds.finance.yahoo.com', port=443): Failed to resolve 'feeds.finance.yahoo.com' ([Errno 11001] getaddrinfo failed)"))
+2026-05-04 14:29:27 [INFO] data — Fetching from NewsAPI for AAPL...
+2026-05-04 14:29:27 [WARNING] data — NewsAPI failed: HTTPSConnectionPool(host='newsapi.org', port=443): Max retries exceeded with url: /v2/everything?q=AAPL&language=en&sortBy=publishedAt&apiKey=9ee9909db8e84d66914ec7ea836b3c9d (Caused by NameResolutionError("HTTPSConnection(host='newsapi.org', port=443): Failed to resolve 'newsapi.org' ([Errno 11001] getaddrinfo failed)"))
+2026-05-04 14:29:27 [WARNING] app — News collection issue: No objects to concatenate
+2026-05-04 14:29:28 [WARNING] data — Attempt 2 failed for https://feeds.finance.yahoo.com/rss/2.0/headline?s=AAPL&region=US&lang=en-US: HTTPSConnectionPool(host='feeds.finance.yahoo.com', port=443): Max retries exceeded with url: /rss/2.0/headline?s=AAPL&region=US&lang=en-US (Caused by NameResolutionError("HTTPSConnection(host='feeds.finance.yahoo.com', port=443): Failed to resolve 'feeds.finance.yahoo.com' ([Errno 11001] getaddrinfo failed)"))
+2026-05-04 14:29:28 [WARNING] data — Attempt 3 failed for https://feeds.finance.yahoo.com/rss/2.0/headline?s=AAPL&region=US&lang=en-US: HTTPSConnectionPool(host='feeds.finance.yahoo.com', port=443): Max retries exceeded with url: /rss/2.0/headline?s=AAPL&region=US&lang=en-US (Caused by NameResolutionError("HTTPSConnection(host='feeds.finance.yahoo.com', port=443): Failed to resolve 'feeds.finance.yahoo.com' ([Errno 11001] getaddrinfo failed)"))
+2026-05-04 14:29:30 [WARNING] data — Attempt 3 failed for https://feeds.finance.yahoo.com/rss/2.0/headline?s=AAPL&region=US&lang=en-US: HTTPSConnectionPool(host='feeds.finance.yahoo.com', port=443): Max retries exceeded with url: /rss/2.0/headline?s=AAPL&region=US&lang=en-US (Caused by NameResolutionError("HTTPSConnection(host='feeds.finance.yahoo.com', port=443): Failed to resolve 'feeds.finance.yahoo.com' ([Errno 11001] getaddrinfo failed)"))
+2026-05-04 14:29:32 [ERROR] data — Couldn't reach Yahoo RSS for AAPL
+2026-05-04 14:29:32 [WARNING] data — Attempt 1 failed for https://economictimes.indiatimes.com/markets/stocks/news: HTTPSConnectionPool(host='economictimes.indiatimes.com', port=443): Max retries exceeded with url: /markets/stocks/news (Caused by NameResolutionError("HTTPSConnection(host='economictimes.indiatimes.com', port=443): Failed to resolve 'economictimes.indiatimes.com' ([Errno 11001] getaddrinfo failed)"))
+2026-05-04 14:29:33 [WARNING] data — Attempt 2 failed for https://economictimes.indiatimes.com/markets/stocks/news: HTTPSConnectionPool(host='economictimes.indiatimes.com', port=443): Max retries exceeded with url: /markets/stocks/news (Caused by NameResolutionError("HTTPSConnection(host='economictimes.indiatimes.com', port=443): Failed to resolve 'economictimes.indiatimes.com' ([Errno 11001] getaddrinfo failed)"))
+2026-05-04 14:29:34 [ERROR] data — Couldn't reach Yahoo RSS for AAPL
+2026-05-04 14:29:34 [WARNING] data — Attempt 1 failed for https://economictimes.indiatimes.com/markets/stocks/news: HTTPSConnectionPool(host='economictimes.indiatimes.com', port=443): Max retries exceeded with url: /markets/stocks/news (Caused by NameResolutionError("HTTPSConnection(host='economictimes.indiatimes.com', port=443): Failed to resolve 'economictimes.indiatimes.com' ([Errno 11001] getaddrinfo failed)"))
+2026-05-04 14:29:35 [WARNING] data — Attempt 2 failed for https://economictimes.indiatimes.com/markets/stocks/news: HTTPSConnectionPool(host='economictimes.indiatimes.com', port=443): Max retries exceeded with url: /markets/stocks/news (Caused by NameResolutionError("HTTPSConnection(host='economictimes.indiatimes.com', port=443): Failed to resolve 'economictimes.indiatimes.com' ([Errno 11001] getaddrinfo failed)"))
+2026-05-04 14:29:35 [WARNING] data — Attempt 3 failed for https://economictimes.indiatimes.com/markets/stocks/news: HTTPSConnectionPool(host='economictimes.indiatimes.com', port=443): Max retries exceeded with url: /markets/stocks/news (Caused by NameResolutionError("HTTPSConnection(host='economictimes.indiatimes.com', port=443): Failed to resolve 'economictimes.indiatimes.com' ([Errno 11001] getaddrinfo failed)"))
+2026-05-04 14:29:37 [WARNING] data — Attempt 3 failed for https://economictimes.indiatimes.com/markets/stocks/news: HTTPSConnectionPool(host='economictimes.indiatimes.com', port=443): Max retries exceeded with url: /markets/stocks/news (Caused by NameResolutionError("HTTPSConnection(host='economictimes.indiatimes.com', port=443): Failed to resolve 'economictimes.indiatimes.com' ([Errno 11001] getaddrinfo failed)"))
+2026-05-04 14:29:39 [WARNING] data — Attempt 1 failed for https://www.moneycontrol.com/news/business/markets/: HTTPSConnectionPool(host='www.moneycontrol.com', port=443): Max retries exceeded with url: /news/business/markets/ (Caused by NameResolutionError("HTTPSConnection(host='www.moneycontrol.com', port=443): Failed to resolve 'www.moneycontrol.com' ([Errno 11001] getaddrinfo failed)"))
+2026-05-04 14:29:40 [WARNING] data — Attempt 2 failed for https://www.moneycontrol.com/news/business/markets/: HTTPSConnectionPool(host='www.moneycontrol.com', port=443): Max retries exceeded with url: /news/business/markets/ (Caused by NameResolutionError("HTTPSConnection(host='www.moneycontrol.com', port=443): Failed to resolve 'www.moneycontrol.com' ([Errno 11001] getaddrinfo failed)"))
+2026-05-04 14:29:41 [WARNING] data — Attempt 1 failed for https://www.moneycontrol.com/news/business/markets/: HTTPSConnectionPool(host='www.moneycontrol.com', port=443): Max retries exceeded with url: /news/business/markets/ (Caused by NameResolutionError("HTTPSConnection(host='www.moneycontrol.com', port=443): Failed to resolve 'www.moneycontrol.com' ([Errno 11001] getaddrinfo failed)"))
+2026-05-04 14:29:42 [WARNING] data — Attempt 2 failed for https://www.moneycontrol.com/news/business/markets/: HTTPSConnectionPool(host='www.moneycontrol.com', port=443): Max retries exceeded with url: /news/business/markets/ (Caused by NameResolutionError("HTTPSConnection(host='www.moneycontrol.com', port=443): Failed to resolve 'www.moneycontrol.com' ([Errno 11001] getaddrinfo failed)"))
+2026-05-04 14:29:43 [WARNING] data — Attempt 3 failed for https://www.moneycontrol.com/news/business/markets/: HTTPSConnectionPool(host='www.moneycontrol.com', port=443): Max retries exceeded with url: /news/business/markets/ (Caused by NameResolutionError("HTTPSConnection(host='www.moneycontrol.com', port=443): Failed to resolve 'www.moneycontrol.com' ([Errno 11001] getaddrinfo failed)"))
+2026-05-04 14:29:44 [WARNING] data — Attempt 3 failed for https://www.moneycontrol.com/news/business/markets/: HTTPSConnectionPool(host='www.moneycontrol.com', port=443): Max retries exceeded with url: /news/business/markets/ (Caused by NameResolutionError("HTTPSConnection(host='www.moneycontrol.com', port=443): Failed to resolve 'www.moneycontrol.com' ([Errno 11001] getaddrinfo failed)"))
+2026-05-04 14:29:47 [INFO] data — Fetching from NewsAPI for AAPL...
+2026-05-04 14:29:47 [WARNING] data — NewsAPI failed: HTTPSConnectionPool(host='newsapi.org', port=443): Max retries exceeded with url: /v2/everything?q=AAPL&language=en&sortBy=publishedAt&apiKey=9ee9909db8e84d66914ec7ea836b3c9d (Caused by NameResolutionError("HTTPSConnection(host='newsapi.org', port=443): Failed to resolve 'newsapi.org' ([Errno 11001] getaddrinfo failed)"))
+2026-05-04 14:29:47 [WARNING] app — News collection issue: No objects to concatenate
+2026-05-04 14:29:48 [INFO] data — Fetching from NewsAPI for AAPL...
+2026-05-04 14:29:48 [WARNING] data — NewsAPI failed: HTTPSConnectionPool(host='newsapi.org', port=443): Max retries exceeded with url: /v2/everything?q=AAPL&language=en&sortBy=publishedAt&apiKey=9ee9909db8e84d66914ec7ea836b3c9d (Caused by NameResolutionError("HTTPSConnection(host='newsapi.org', port=443): Failed to resolve 'newsapi.org' ([Errno 11001] getaddrinfo failed)"))
+2026-05-04 14:29:48 [WARNING] app — News collection issue: No objects to concatenate
+2026-05-04 14:29:48 [INFO] data — Fetching stock data for AAPL...
+2026-05-04 14:29:48 [WARNING] data — No stock data for AAPL
+2026-05-04 14:29:48 [INFO] data — Screener: fetching 21 tickers...
+2026-05-04 14:30:44 [INFO] data — Collecting news for AAPL...
+2026-05-04 14:30:49 [INFO] data — Collecting news for AAPL...
+2026-05-04 14:30:49 [INFO] data — Yahoo RSS: 20 articles for AAPL
+2026-05-04 14:30:53 [INFO] data — Yahoo RSS: 20 articles for AAPL
+2026-05-04 14:30:55 [INFO] data — Economic Times: 16 articles
+2026-05-04 14:30:56 [INFO] data — Economic Times: 16 articles
+2026-05-04 14:31:00 [INFO] data — Moneycontrol: 25 articles
+2026-05-04 14:31:00 [INFO] data — Fetching from NewsAPI for AAPL...
+2026-05-04 14:31:00 [INFO] data — Moneycontrol: 25 articles
+2026-05-04 14:31:00 [INFO] data — Fetching from NewsAPI for AAPL...
+2026-05-04 14:31:01 [INFO] data — NewsAPI: 30 articles
+2026-05-04 14:31:02 [INFO] data — News saved -> C:\Users\ABHI\python project ca\data\news_data.csv (91 rows)
+2026-05-04 14:31:02 [INFO] sentiment — Computing sentiment for 91 rows ...
+2026-05-04 14:31:02 [INFO] sentiment — Distribution: 59 positive, 20 neutral, 12 negative
+2026-05-04 14:31:02 [INFO] data — NewsAPI: 30 articles
+2026-05-04 14:31:03 [INFO] data — News saved -> C:\Users\ABHI\python project ca\data\news_data.csv (91 rows)
+2026-05-04 14:31:03 [INFO] sentiment — Computing sentiment for 91 rows ...
+2026-05-04 14:31:03 [INFO] sentiment — Distribution: 59 positive, 20 neutral, 12 negative
+2026-05-04 14:31:03 [INFO] data — Fetching stock data for AAPL...
+2026-05-04 14:31:04 [INFO] data — Stock data saved -> C:\Users\ABHI\python project ca\data\stock_data.csv (251 rows)
+2026-05-04 14:31:04 [INFO] data — Merged data saved -> C:\Users\ABHI\python project ca\data\merged_dataset.csv (251 rows)
+2026-05-04 14:31:04 [INFO] features — Building features on 251 rows
+2026-05-04 14:31:04 [INFO] features — Feature matrix ready: 201 rows x 32 features
+2026-05-04 14:31:04 [INFO] features — Features saved to C:\Users\ABHI\python project ca\data\features.csv
+2026-05-04 14:31:04 [INFO] model — Scaler saved -> C:\Users\ABHI\python project ca\models\scaler.pkl
+2026-05-04 14:31:04 [INFO] model — Training Logistic Regression...
+2026-05-04 14:31:04 [INFO] model — Logistic Regression -> Acc: 0.4878 | Prec: 0.5238 | Rec: 0.5000 | F1: 0.5116
+2026-05-04 14:31:04 [INFO] model — Training Random Forest...
+2026-05-04 14:31:04 [INFO] model — Top features:
+volatility       0.076951
+macd             0.069000
+macd_hist        0.068984
+volume_change    0.045271
+volume           0.043982
+2026-05-04 14:31:04 [INFO] model — Random Forest -> Acc: 0.5854 | Prec: 0.5641 | Rec: 1.0000 | F1: 0.7213
+2026-05-04 14:31:04 [INFO] model — Training LSTM (seq_len=10)...
+2026-05-04 14:31:11 [INFO] model — LSTM saved -> C:\Users\ABHI\python project ca\models\lstm_model.keras
+2026-05-04 14:31:11 [INFO] model — LSTM -> Acc: 0.5806 | Prec: 0.5806 | Rec: 1.0000 | F1: 0.7347
+2026-05-04 14:31:11 [INFO] model — Best model: LSTM (F1=0.7347)
+2026-05-04 14:31:11 [INFO] model — Loading best model: LSTM
+2026-05-04 14:31:12 [INFO] data — Screener: fetching 21 tickers...
+2026-05-04 14:31:17 [INFO] model — Scaler saved -> C:\Users\ABHI\python project ca\models\scaler.pkl
+2026-05-04 14:31:17 [INFO] model — Training Logistic Regression...
+2026-05-04 14:31:17 [INFO] model — Logistic Regression -> Acc: 0.4878 | Prec: 0.5238 | Rec: 0.5000 | F1: 0.5116
+2026-05-04 14:31:17 [INFO] model — Training Random Forest...
+2026-05-04 14:31:18 [INFO] model — Top features:
+volatility       0.076951
+macd             0.069000
+macd_hist        0.068984
+volume_change    0.045271
+volume           0.043982
+2026-05-04 14:31:18 [INFO] model — Random Forest -> Acc: 0.5854 | Prec: 0.5641 | Rec: 1.0000 | F1: 0.7213
+2026-05-04 14:31:18 [INFO] model — Training LSTM (seq_len=10)...
+2026-05-04 14:31:27 [INFO] model — LSTM saved -> C:\Users\ABHI\python project ca\models\lstm_model.keras
+2026-05-04 14:31:27 [INFO] model — LSTM -> Acc: 0.4194 | Prec: 0.0000 | Rec: 0.0000 | F1: 0.0000
+2026-05-04 14:31:27 [INFO] model — Best model: Random Forest (F1=0.7213)
+2026-05-04 14:31:28 [INFO] model — Loading best model: Random Forest
+2026-05-04 14:31:28 [INFO] data — Screener: fetching 21 tickers...
+2026-05-04 14:31:44 [INFO] model — Scaler saved -> C:\Users\ABHI\python project ca\models\scaler.pkl
+2026-05-04 14:31:44 [INFO] model — Training Logistic Regression...
+2026-05-04 14:31:44 [INFO] model — Logistic Regression -> Acc: 0.4878 | Prec: 0.5238 | Rec: 0.5000 | F1: 0.5116
+2026-05-04 14:31:44 [INFO] model — Training Random Forest...
+2026-05-04 14:31:44 [INFO] model — Top features:
+volatility       0.076951
+macd             0.069000
+macd_hist        0.068984
+volume_change    0.045271
+volume           0.043982
+2026-05-04 14:31:44 [INFO] model — Random Forest -> Acc: 0.5854 | Prec: 0.5641 | Rec: 1.0000 | F1: 0.7213
+2026-05-04 14:31:44 [INFO] model — Training LSTM (seq_len=10)...
+2026-05-04 14:31:51 [INFO] model — LSTM saved -> C:\Users\ABHI\python project ca\models\lstm_model.keras
+2026-05-04 14:31:51 [INFO] model — LSTM -> Acc: 0.5161 | Prec: 0.6364 | Rec: 0.3889 | F1: 0.4828
+2026-05-04 14:31:51 [INFO] model — Best model: Random Forest (F1=0.7213)
+2026-05-04 14:31:51 [INFO] model — Loading best model: Random Forest
+2026-05-04 14:31:59 [INFO] model — Loading best model: Random Forest
+2026-05-04 14:32:01 [INFO] model — Loading best model: Random Forest
+2026-05-04 14:32:02 [INFO] model — Loading best model: Random Forest
+2026-05-04 14:32:46 [INFO] model — Loading best model: Random Forest
+2026-05-04 14:32:52 [INFO] model — Loading best model: Random Forest
+2026-05-04 14:34:11 [INFO] model — Loading best model: Random Forest
+2026-05-04 15:06:49 [INFO] data - Collecting news for AAPL...
+2026-05-04 15:06:52 [INFO] data - Yahoo RSS: 20 articles for AAPL
+2026-05-04 15:06:54 [INFO] data - Economic Times: 16 articles
+2026-05-04 15:06:58 [INFO] data - Moneycontrol: 25 articles
+2026-05-04 15:06:58 [INFO] data - Fetching from NewsAPI for AAPL...
+2026-05-04 15:07:00 [INFO] data - NewsAPI: 30 articles
+2026-05-04 15:07:00 [INFO] data - News saved -> C:\Users\ABHI\python project ca\data\news_data.csv (91 rows)
+2026-05-04 15:07:00 [INFO] sentiment - Computing sentiment for 91 rows ...
+2026-05-04 15:07:00 [INFO] sentiment - Distribution: 58 positive, 21 neutral, 12 negative
+2026-05-04 15:07:04 [INFO] data - Collecting news for AAPL...
+2026-05-04 15:07:05 [INFO] data - Yahoo RSS: 20 articles for AAPL
+2026-05-04 15:07:08 [INFO] data - Economic Times: 16 articles
+2026-05-04 15:07:11 [INFO] data - Moneycontrol: 25 articles
+2026-05-04 15:07:11 [INFO] data - Fetching from NewsAPI for AAPL...
+2026-05-04 15:07:14 [INFO] data - NewsAPI: 30 articles
+2026-05-04 15:07:14 [INFO] data - News saved -> C:\Users\ABHI\python project ca\data\news_data.csv (91 rows)
+2026-05-04 15:07:14 [INFO] sentiment - Computing sentiment for 91 rows ...
+2026-05-04 15:07:14 [INFO] sentiment - Distribution: 58 positive, 21 neutral, 12 negative
+2026-05-04 15:07:14 [INFO] data - Fetching stock data for AAPL...
+2026-05-04 15:07:15 [INFO] data - Stock data saved -> C:\Users\ABHI\python project ca\data\stock_data.csv (251 rows)
+2026-05-04 15:07:15 [INFO] data - Merged data saved -> C:\Users\ABHI\python project ca\data\merged_dataset.csv (251 rows)
+2026-05-04 15:07:15 [INFO] features - Building features on 251 rows
+2026-05-04 15:07:15 [INFO] features - Feature matrix ready: 201 rows x 32 features
+2026-05-04 15:07:15 [INFO] features - Features saved to C:\Users\ABHI\python project ca\data\features.csv
+2026-05-04 15:11:06 [INFO] data - Collecting news for AAPL...
+2026-05-04 15:11:16 [INFO] data - Collecting news for AAPL...
+2026-05-04 15:11:17 [INFO] data - Yahoo RSS: 20 articles for AAPL
+2026-05-04 15:11:19 [INFO] data - Yahoo RSS: 20 articles for AAPL
+2026-05-04 15:11:20 [INFO] data - Economic Times: 16 articles
+2026-05-04 15:11:22 [INFO] data - Economic Times: 16 articles
+2026-05-04 15:11:23 [INFO] data - Moneycontrol: 25 articles
+2026-05-04 15:11:23 [INFO] data - Fetching from NewsAPI for AAPL...
+2026-05-04 15:11:26 [INFO] data - NewsAPI: 30 articles
+2026-05-04 15:11:26 [INFO] data - News saved -> C:\Users\ABHI\python project ca\data\news_data.csv (91 rows)
+2026-05-04 15:11:26 [INFO] sentiment - Computing sentiment for 91 rows ...
+2026-05-04 15:11:26 [INFO] sentiment - Distribution: 58 positive, 21 neutral, 12 negative
+2026-05-04 15:11:26 [INFO] data - Moneycontrol: 25 articles
+2026-05-04 15:11:26 [INFO] data - Fetching from NewsAPI for AAPL...
+2026-05-04 15:11:27 [INFO] data - NewsAPI: 30 articles
+2026-05-04 15:11:27 [INFO] data - News saved -> C:\Users\ABHI\python project ca\data\news_data.csv (91 rows)
+2026-05-04 15:11:27 [INFO] sentiment - Computing sentiment for 91 rows ...
+2026-05-04 15:11:27 [INFO] sentiment - Distribution: 58 positive, 21 neutral, 12 negative
+2026-05-04 15:11:27 [INFO] data - Fetching stock data for AAPL...
+2026-05-04 15:11:27 [INFO] data - Stock data saved -> C:\Users\ABHI\python project ca\data\stock_data.csv (251 rows)
+2026-05-04 15:11:27 [INFO] data - Merged data saved -> C:\Users\ABHI\python project ca\data\merged_dataset.csv (251 rows)
+2026-05-04 15:11:27 [INFO] features - Building features on 251 rows
+2026-05-04 15:11:27 [INFO] features - Feature matrix ready: 201 rows x 32 features
+2026-05-04 15:11:27 [INFO] features - Features saved to C:\Users\ABHI\python project ca\data\features.csv
+2026-05-04 15:11:27 [INFO] model - Scaler saved -> C:\Users\ABHI\python project ca\models\scaler.pkl
+2026-05-04 15:11:27 [INFO] model - Training Logistic Regression...
+2026-05-04 15:11:28 [INFO] model - Logistic Regression -> Acc: 0.4878 | Prec: 0.5238 | Rec: 0.5000 | F1: 0.5116
+2026-05-04 15:11:28 [INFO] model - Training Random Forest...
+2026-05-04 15:11:28 [INFO] model - Top features:
+volatility       0.076951
+macd             0.069000
+macd_hist        0.068984
+volume_change    0.045271
+volume           0.043982
+2026-05-04 15:11:28 [INFO] model - Random Forest -> Acc: 0.5854 | Prec: 0.5641 | Rec: 1.0000 | F1: 0.7213
+2026-05-04 15:11:34 [INFO] model - Training LSTM (seq_len=10)...
+2026-05-04 15:11:42 [INFO] model - LSTM saved -> C:\Users\ABHI\python project ca\models\lstm_model.keras
+2026-05-04 15:11:42 [INFO] model - LSTM -> Acc: 0.4839 | Prec: 0.5625 | Rec: 0.5000 | F1: 0.5294
+2026-05-04 15:11:42 [INFO] model - Best model: Random Forest (F1=0.7213)
+2026-05-04 15:11:42 [INFO] model - Loading best model: Random Forest
+2026-05-04 15:11:42 [INFO] data - Screener: fetching 21 tickers...
+2026-05-04 15:19:47 [INFO] model - Scaler saved -> C:\Users\ABHI\python project ca\models\scaler.pkl
+2026-05-04 15:19:47 [INFO] model - Training Logistic Regression...
+2026-05-04 15:19:47 [INFO] model - Logistic Regression -> Acc: 0.4878 | Prec: 0.5238 | Rec: 0.5000 | F1: 0.5116
+2026-05-04 15:19:47 [INFO] model - Training Random Forest...
+2026-05-04 15:19:47 [INFO] model - Top features:
+volatility       0.076951
+macd             0.069000
+macd_hist        0.068984
+volume_change    0.045271
+volume           0.043982
+2026-05-04 15:19:47 [INFO] model - Random Forest -> Acc: 0.5854 | Prec: 0.5641 | Rec: 1.0000 | F1: 0.7213
+2026-05-04 15:19:47 [INFO] model - Training LSTM (seq_len=10)...
+2026-05-04 15:19:52 [INFO] model - Loading best model: Random Forest
+2026-05-04 15:19:56 [INFO] model - LSTM saved -> C:\Users\ABHI\python project ca\models\lstm_model.keras
+2026-05-04 15:19:56 [INFO] model - LSTM -> Acc: 0.4194 | Prec: 0.0000 | Rec: 0.0000 | F1: 0.0000
+2026-05-04 15:19:56 [INFO] model - Best model: Random Forest (F1=0.7213)
+2026-05-04 15:20:03 [INFO] data - Collecting news for JPM...
+2026-05-04 15:20:06 [INFO] data - Yahoo RSS: 20 articles for JPM
+2026-05-04 15:20:10 [INFO] data - Economic Times: 16 articles
+2026-05-04 15:20:13 [INFO] data - Moneycontrol: 25 articles
+2026-05-04 15:20:13 [INFO] data - Fetching from NewsAPI for JPM...
+2026-05-04 15:20:14 [INFO] data - NewsAPI: 30 articles
+2026-05-04 15:20:14 [INFO] data - News saved -> C:\Users\ABHI\python project ca\data\news_data.csv (90 rows)
+2026-05-04 15:20:14 [INFO] sentiment - Computing sentiment for 90 rows ...
+2026-05-04 15:20:14 [INFO] sentiment - Distribution: 48 positive, 18 neutral, 24 negative
+2026-05-04 15:20:14 [INFO] data - Fetching stock data for JPM...
+2026-05-04 15:20:16 [INFO] data - Stock data saved -> C:\Users\ABHI\python project ca\data\stock_data.csv (251 rows)
+2026-05-04 15:20:16 [INFO] data - Merged data saved -> C:\Users\ABHI\python project ca\data\merged_dataset.csv (251 rows)
+2026-05-04 15:20:16 [INFO] features - Building features on 251 rows
+2026-05-04 15:20:16 [INFO] features - Feature matrix ready: 201 rows x 32 features
+2026-05-04 15:20:16 [INFO] features - Features saved to C:\Users\ABHI\python project ca\data\features.csv
+2026-05-04 15:20:16 [INFO] model - Loading best model: Random Forest
+2026-05-04 15:20:39 [INFO] model - Scaler saved -> C:\Users\ABHI\python project ca\models\scaler.pkl
+2026-05-04 15:20:39 [INFO] model - Training Logistic Regression...
+2026-05-04 15:20:39 [INFO] model - Logistic Regression -> Acc: 0.6585 | Prec: 0.6452 | Rec: 0.8696 | F1: 0.7407
+2026-05-04 15:20:39 [INFO] model - Training Random Forest...
+2026-05-04 15:20:39 [INFO] model - Top features:
+volume_change    0.089974
+bb_lower         0.055797
+daily_return     0.053473
+sma_20           0.045628
+volume_ratio     0.045339
+2026-05-04 15:20:39 [INFO] model - Random Forest -> Acc: 0.6098 | Prec: 0.6207 | Rec: 0.7826 | F1: 0.6923
+2026-05-04 15:20:39 [INFO] model - Training LSTM (seq_len=10)...
+2026-05-04 15:20:46 [INFO] model - LSTM saved -> C:\Users\ABHI\python project ca\models\lstm_model.keras
+2026-05-04 15:20:46 [INFO] model - LSTM -> Acc: 0.6129 | Prec: 0.6154 | Rec: 0.8889 | F1: 0.7273
+2026-05-04 15:20:46 [INFO] model - Best model: Logistic Regression (F1=0.7407)
+2026-05-04 15:20:46 [INFO] model - Loading best model: Logistic Regression
+2026-05-04 15:44:18 [INFO] data - Collecting news for AAPL...
+2026-05-04 15:44:20 [INFO] data - Yahoo RSS: 20 articles for AAPL
+2026-05-04 15:44:23 [INFO] data - Economic Times: 16 articles
+2026-05-04 15:44:26 [INFO] data - Moneycontrol: 25 articles
+2026-05-04 15:44:26 [INFO] data - Fetching from NewsAPI for AAPL...
+2026-05-04 15:44:27 [INFO] data - NewsAPI: 30 articles
+2026-05-04 15:44:28 [INFO] data - News saved -> C:\Users\ABHI\python project ca\data\news_data.csv (91 rows)
+2026-05-04 15:44:28 [INFO] sentiment - Computing sentiment for 91 rows ...
+2026-05-04 15:44:28 [INFO] sentiment - Distribution: 57 positive, 22 neutral, 12 negative
+2026-05-04 15:44:28 [INFO] data - Fetching stock data for AAPL...
+2026-05-04 15:44:29 [INFO] data - Stock data saved -> C:\Users\ABHI\python project ca\data\stock_data.csv (251 rows)
+2026-05-04 15:44:29 [INFO] data - Merged data saved -> C:\Users\ABHI\python project ca\data\merged_dataset.csv (251 rows)
+2026-05-04 15:44:29 [INFO] features - Building features on 251 rows
+2026-05-04 15:44:29 [INFO] features - Feature matrix ready: 201 rows x 32 features
+2026-05-04 15:44:29 [INFO] features - Features saved to C:\Users\ABHI\python project ca\data\features.csv
+2026-05-04 15:44:29 [INFO] data - Screener: fetching 21 tickers...
+2026-05-04 15:45:14 [INFO] model - Scaler saved -> C:\Users\ABHI\python project ca\models\scaler.pkl
+2026-05-04 15:45:14 [INFO] model - Training Logistic Regression...
+2026-05-04 15:45:14 [INFO] model - Logistic Regression -> Acc: 0.4878 | Prec: 0.5238 | Rec: 0.5000 | F1: 0.5116
+2026-05-04 15:45:14 [INFO] model - Training Random Forest...
+2026-05-04 15:45:15 [INFO] model - Top features:
+volatility       0.076951
+macd             0.069000
+macd_hist        0.068984
+volume_change    0.045271
+volume           0.043982
+2026-05-04 15:45:15 [INFO] model - Random Forest -> Acc: 0.5854 | Prec: 0.5641 | Rec: 1.0000 | F1: 0.7213
+2026-05-04 15:45:15 [INFO] model - Training LSTM (seq_len=10)...
+2026-05-04 15:45:22 [INFO] model - LSTM saved -> C:\Users\ABHI\python project ca\models\lstm_model.keras
+2026-05-04 15:45:22 [INFO] model - LSTM -> Acc: 0.5806 | Prec: 0.6471 | Rec: 0.6111 | F1: 0.6286
+2026-05-04 15:45:22 [INFO] model - Best model: Random Forest (F1=0.7213)
+2026-05-04 15:45:22 [INFO] model - Loading best model: Random Forest
+2026-05-04 15:47:00 [INFO] model - Loading best model: Random Forest
+2026-05-04 15:47:07 [INFO] model - Loading best model: Random Forest
+2026-05-04 15:47:24 [INFO] data - Collecting news for AAPL...
+2026-05-04 15:47:26 [INFO] data - Yahoo RSS: 20 articles for AAPL
+2026-05-04 15:47:29 [INFO] data - Economic Times: 16 articles
+2026-05-04 15:47:32 [INFO] data - Moneycontrol: 25 articles
+2026-05-04 15:47:32 [INFO] data - Fetching from NewsAPI for AAPL...
+2026-05-04 15:47:32 [INFO] data - Collecting news for AAPL...
+2026-05-04 15:47:33 [INFO] data - NewsAPI: 30 articles
+2026-05-04 15:47:33 [INFO] data - News saved -> C:\Users\ABHI\python project ca\data\news_data.csv (91 rows)
+2026-05-04 15:47:33 [INFO] sentiment - Computing sentiment for 91 rows ...
+2026-05-04 15:47:33 [INFO] sentiment - Distribution: 57 positive, 22 neutral, 12 negative
+2026-05-04 15:47:36 [INFO] data - Yahoo RSS: 20 articles for AAPL
+2026-05-04 15:47:38 [INFO] data - Economic Times: 16 articles
+2026-05-04 15:47:41 [INFO] data - Moneycontrol: 25 articles
+2026-05-04 15:47:41 [INFO] data - Fetching from NewsAPI for AAPL...
+2026-05-04 15:47:42 [INFO] data - NewsAPI: 30 articles
+2026-05-04 15:47:42 [INFO] data - News saved -> C:\Users\ABHI\python project ca\data\news_data.csv (91 rows)
+2026-05-04 15:47:42 [INFO] sentiment - Computing sentiment for 91 rows ...
+2026-05-04 15:47:42 [INFO] sentiment - Distribution: 57 positive, 22 neutral, 12 negative
+2026-05-04 15:47:42 [INFO] data - Fetching stock data for AAPL...
+2026-05-04 15:47:43 [INFO] data - Stock data saved -> C:\Users\ABHI\python project ca\data\stock_data.csv (251 rows)
+2026-05-04 15:47:43 [INFO] data - Merged data saved -> C:\Users\ABHI\python project ca\data\merged_dataset.csv (251 rows)
+2026-05-04 15:47:43 [INFO] features - Building features on 251 rows
+2026-05-04 15:47:43 [INFO] features - Feature matrix ready: 201 rows x 32 features
+2026-05-04 15:47:43 [INFO] features - Features saved to C:\Users\ABHI\python project ca\data\features.csv
+2026-05-04 15:47:43 [INFO] model - Loading best model: Random Forest
+2026-05-04 15:47:58 [INFO] data - Collecting news for JPM...
+2026-05-04 15:48:00 [INFO] data - Yahoo RSS: 20 articles for JPM
+2026-05-04 15:48:02 [INFO] data - Economic Times: 16 articles
+2026-05-04 15:48:05 [INFO] data - Moneycontrol: 25 articles
+2026-05-04 15:48:05 [INFO] data - Fetching from NewsAPI for JPM...
+2026-05-04 15:48:07 [INFO] data - NewsAPI: 30 articles
+2026-05-04 15:48:07 [INFO] data - News saved -> C:\Users\ABHI\python project ca\data\news_data.csv (90 rows)
+2026-05-04 15:48:07 [INFO] sentiment - Computing sentiment for 90 rows ...
+2026-05-04 15:48:07 [INFO] sentiment - Distribution: 48 positive, 19 neutral, 23 negative
+2026-05-04 15:48:07 [INFO] data - Fetching stock data for JPM...
+2026-05-04 15:48:08 [INFO] data - Stock data saved -> C:\Users\ABHI\python project ca\data\stock_data.csv (251 rows)
+2026-05-04 15:48:08 [INFO] data - Merged data saved -> C:\Users\ABHI\python project ca\data\merged_dataset.csv (251 rows)
+2026-05-04 15:48:08 [INFO] features - Building features on 251 rows
+2026-05-04 15:48:08 [INFO] features - Feature matrix ready: 201 rows x 32 features
+2026-05-04 15:48:08 [INFO] features - Features saved to C:\Users\ABHI\python project ca\data\features.csv
+2026-05-04 15:48:09 [INFO] model - Loading best model: Random Forest
+2026-05-04 15:48:18 [INFO] model - Scaler saved -> C:\Users\ABHI\python project ca\models\scaler.pkl
+2026-05-04 15:48:18 [INFO] model - Training Logistic Regression...
+2026-05-04 15:48:18 [INFO] model - Logistic Regression -> Acc: 0.6585 | Prec: 0.6452 | Rec: 0.8696 | F1: 0.7407
+2026-05-04 15:48:18 [INFO] model - Training Random Forest...
+2026-05-04 15:48:18 [INFO] model - Top features:
+volume_change    0.089974
+bb_lower         0.055797
+daily_return     0.053473
+sma_20           0.045628
+volume_ratio     0.045339
+2026-05-04 15:48:18 [INFO] model - Random Forest -> Acc: 0.6098 | Prec: 0.6207 | Rec: 0.7826 | F1: 0.6923
+2026-05-04 15:48:18 [INFO] model - Training LSTM (seq_len=10)...
+2026-05-04 15:48:25 [INFO] model - LSTM saved -> C:\Users\ABHI\python project ca\models\lstm_model.keras
+2026-05-04 15:48:25 [INFO] model - LSTM -> Acc: 0.6452 | Prec: 0.6400 | Rec: 0.8889 | F1: 0.7442
+2026-05-04 15:48:25 [INFO] model - Best model: LSTM (F1=0.7442)
+2026-05-04 15:48:26 [INFO] model - Loading best model: LSTM
